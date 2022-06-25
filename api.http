@@ -1,0 +1,14 @@
+GET http://localhost/api/products
+
+###
+
+POST http://localhost/api/products
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Product Two",
+  "slug": "product-two",
+  "description": "This is product two",
+  "price": "888.88"
+}
