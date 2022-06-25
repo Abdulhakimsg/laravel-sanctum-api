@@ -5,10 +5,70 @@ GET http://localhost/api/products
 POST http://localhost/api/products
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer 6|k1KfofgWkLGhxwoP3E9nKghcYrihU4is8KibzH12
 
 {
-  "name": "Product Two",
-  "slug": "product-two",
-  "description": "This is product two",
-  "price": "888.88"
+  "name": "Iphone 99",
+  "slug": "iphone-99",
+  "description": "This is the Iphone 99",
+  "price": "888888.8888"
 }
+
+###
+
+GET http://localhost/api/products/2
+Accept: application/json
+
+###
+
+PUT http://localhost/api/products/2
+Accept: application/json
+Content-Type: application/json
+
+{
+    "price": "88888.888"
+}
+
+###
+
+DELETE http://localhost/api/products/6
+
+###
+
+GET http://localhost/api/products/search/test
+Accept: application/json
+
+###
+
+POST http://localhost/api/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "brad",
+    "email": "brad@gmail.com",
+    "password": "123456",
+    "password_confirmation": "123456"
+}
+
+###
+
+POST http://localhost/api/logout
+Authorization: Bearer 6|k1KfofgWkLGhxwoP3E9nKghcYrihU4is8KibzH12
+Accept: application/json
+Content-Type: application/json
+
+###
+
+POST http://localhost/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "brad@gmail.com",
+    "password": "123456"
+}
+
+
+
+
